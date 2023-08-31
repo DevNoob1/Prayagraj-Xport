@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -40px;
+}
+
+.icon h2 {
+    margin-top: -5px;
+}
+
+img {
+    height: 5ch;
+}
+
+.apple {
+    height: 5ch;
+    margin-top: 5ch;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    gap: 10ch;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.details img {
+    height: 3ch;
+}

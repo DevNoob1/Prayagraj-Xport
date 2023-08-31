@@ -1,0 +1,50 @@
+.contento {
+    display: flex;
+    flex-direction: column;
+    gap: 3ch;
+    height: 45ch;
+    /* Adjusted height for 3 items */
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: 10ch;
+    margin-bottom: 10ch;
+    margin: 0 10%;
+    transition: filter 0.3s ease;
+
+    background: linear-gradient(from bottom, rgba(255, 255, 255, 0.283), rgb(255, 255, 255));
+    /* filter: blur(2px); */
+}
+
+.contento>div {
+    filter: none;
+}
+
+.contento::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contento::-webkit-scrollbar-thumb {
+    background-color: rgb(177, 177, 252);
+    border-radius: 4px;
+}
+
+.top {
+    background-color: rgba(255, 255, 255);
+    opacity: 90%;
+    width: 78%;
+    position: absolute;
+    padding-top: 14ch;
+    filter: blur(2px);
+}
+
+
+
+.bottom {
+    background-color: rgba(255, 255, 255);
+    opacity: 90%;
+    width: 78%;
+    position: absolute;
+    margin-top: 31ch;
+    padding-top: 14ch;
+    filter: blur(2px);
+}

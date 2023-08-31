@@ -1,0 +1,14 @@
+.head {
+    background-color: lavender;
+    display: flex;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    padding-top: 5%;
+    justify-content: space-evenly;
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    padding-bottom: 5%;
+}

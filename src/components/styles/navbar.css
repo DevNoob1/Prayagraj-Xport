@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: -1%;
+    position: sticky;
+}
+
+.cat {
+    display: flex;
+    gap: 5ch;
+}

@@ -1,0 +1,17 @@
+.ever {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    padding-top: 20%;
+    padding-bottom: 30%;
+}
+
+.facts {
+    display: flex;
+    font-size: small;
+    justify-content: space-evenly;
+    gap: 7ch;
+    margin-right: 10ch;
+
+}

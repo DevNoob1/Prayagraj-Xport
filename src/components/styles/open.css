@@ -1,0 +1,25 @@
+.open {
+    margin-top: -200px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.job-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3ch;
+    padding: 10px;
+}
+
+.job-box {
+    background-color: rgb(240, 233, 178);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30ch;
+
+}
+
+.job-box:hover {
+    box-shadow: 0px 10px 10px black;
+}
