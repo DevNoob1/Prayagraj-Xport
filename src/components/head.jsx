@@ -13,8 +13,8 @@ const head = () => {
                 <div className='head1'>
 
                     <div className='des1'>
-                        <p style={{ fontSize: '5vmin' }}>Great <b style={{ color: '' }}>Product</b> is </p><br />
-                        <p style={{ fontSize: '5vmin', fontWeight: "bolder" }}> built by great <b style={{ color: '' }}>teams</b></p>
+                        <p style={{ fontSize: '5vmin' }}>Great <b style={{ color: 'rgb(112, 145, 206)' }}>Product</b> is </p><br />
+                        <p style={{ fontSize: '5vmin', fontWeight: "bolder" }}> built by great <b style={{ color: 'rgb(112, 145, 206)' }}>teams</b></p>
                         <br /><br /><br /><br /><br />
                         <p style={{ fontSize: '2vmin', marginLeft: '10vmin', fontFamily: 'sans-serif' }}> You Imagine. <b style={{ color: 'purple', background: 'yellow' }}>We Create</b></p>
                     </div>
