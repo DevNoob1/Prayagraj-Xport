@@ -1,34 +1,19 @@
-import React from 'react'
-import './styles/meet.css'
-const meet = () => {
+import React from 'react';
+import './styles/meet.css';
+import ReviewSlider from './ReviewSlider';
+
+const Meet = () => {
     return (
         <div className='meet'>
-            <div className='meet_details'>
-                <h3 style={{
-                    marginBottom: '-1ch'
-                }} >We take privacy seriously</h3>
-                <h1
-                    style={{
-                        marginBottom: '1px'
-                    }} >before you get started</h1>
+            <div style={{ width: '5%', height: '5px', background: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> <br />
+            <h2>Why customers love</h2> <br />
+            <h2 style={{ fontWeight: 'bolder' }}>  working with us</h2>
+            <br />
+            <br />
 
-                <h3 style={{
-                    marginBottom: '-1ch'
-                }} >"We won't share your answers with anyone (and won't ever tell </h3>
-                <h3
-                    style={{
-                        marginBottom: '1ch'
-                    }} >you which friends said what about you)"</h3>
-                <h2
-                >with love,
-
-                </h2>
-                <button>Start a test</button>
-                <h4>Take only 5 minutes</h4>
-                <img src="https://icons8.com/icon/l6uAzIEMd34H/signature" alt="" />
-            </div>
+            <ReviewSlider />
         </div>
     )
 }
 
-export default meet
+export default Meet;

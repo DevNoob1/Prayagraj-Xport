@@ -1,72 +1,136 @@
-.first {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 3ch;
-}
-
 .beats {
-    margin-top: 5%;
-}
-
-p {
-    font-size: 2ch;
-}
-
-.cards {
+    /* width: 80%; */
     display: flex;
-    gap: 5ch;
-    overflow-x: auto;
-    overflow-y: hidden;
+    justify-content: center;
+}
+
+.first {
+    margin-top: -17%;
+    /* background-color: aqua; */
+    width: 80%;
+
+}
+
+.buton {
+    border: transparent;
+}
+
+.buton:hover {
+    box-shadow: 0px 0px 8px black;
+    cursor: pointer;
+
+}
+
+.clich {
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 4px solid skyblue;
+    padding-left: 20px;
+}
+
+
+.clich:hover {
+    border-left-width: 10px;
+    background-color: rgb(241, 247, 247);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 10%;
+    /* Adjust the gap between boxes */
     padding: 20px;
+    margin-left: 5%;
+    margin-top: 3%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 0.5s;
 }
 
-.card {
-    background-color: white;
+.grid-container.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.box {
+    background: linear-gradient(330deg, purple, rgb(191, 191, 243), rgb(176, 176, 241));
+    color: #fff;
+    border-radius: 5vmin;
+    height: 23vh;
+    width: 50vh;
     padding: 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    /* Set a specific width percentage */
-    height: 25ch;
-    transition: transform 0.3s ease;
-
+    text-align: center;
 }
 
-.card h2 {
-    font-size: 2.5ch;
-    margin: 0.5rem 0;
+.box img {
+    object-fit: cover;
+    height: 180px;
 }
 
-.card p {
-    font-size: 2ch;
+.box:hover {
+    box-shadow: 0px 0px 20px purple;
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
-.card span {
-    font-size: 4ch;
-}
-
-.card:hover {
-    transform: translateX(-10px) rotate(-5deg);
-}
-
-.cards::-webkit-scrollbar {
-    /* width: 1px; */
-    /* height: 2px; */
-    display: none;
-    background-color: transparent;
-}
-
-.cards::-webkit-scrollbar-thumb {
-    background-color: red;
-}
-
-
-/* Adjust card width for smaller screens */
-@media screen and (max-width: 1660px) {
-    .card {
-        flex: 0 0 20%;
-        /* Adjust as needed for smaller screens */
+@keyframes fadin {
+    from {
+        transform: skew(2);
     }
+
+    to {
+        transform: skew(0);
+    }
+}
+
+.ideas {
+    width: 100%;
+    text-align: start;
+    animation: fadin 2s infinite direction fill-mode;
+}
+
+.ideas h4 {
+    font-size: 50px;
+}
+
+button {
+    /* margin-right: 20px; */
+    background: linear-gradient(20deg, rgb(114, 22, 180), rgb(116, 90, 246), rgb(185, 189, 240));
+    width: 20%;
+    font-size: 2.5vmin;
+    height: 5vmin;
+    box-shadow: 0px 5px 20px rgb(163, 163, 248);
+    color: white;
+    border-radius: 1.2vh;
+}
+
+.corner-border {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(227, 225, 225);
+}
+
+/* Top Left Corner */
+.corner-border::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-top: 5px solid red;
+    border-left: 5px solid red;
+    width: 15px;
+    height: 15px;
+}
+
+/* Bottom Right Corner */
+.corner-border::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+    width: 15px;
+    height: 15px;
 }

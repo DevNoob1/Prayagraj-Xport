@@ -12,7 +12,7 @@ import Orange from './components/orange';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+
       <Head />
       <Beats />
       <Orange />

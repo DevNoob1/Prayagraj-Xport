@@ -1,39 +1,122 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './styles/open.css';
 
-const job = [
-    {
-        'Full-stack': ['Full-time position', 'Berlin or Remote'],
-        'Senior Designer': ['Full-time position', 'Berlin or Remote'],
-        'Senior Inter': ['Full-time position', 'Berlin or Remote'],
-    },
-];
 
 const Open = () => {
-    const [showBoxes, setShowBoxes] = useState(false);
 
-    useEffect(() => {
-        // Set showBoxes to true after a short delay to trigger the animation
-        const timer = setTimeout(() => {
-            setShowBoxes(true);
-        }, 300);
 
-        return () => clearTimeout(timer);
-    }, []);
+    const boba = [
+        {
+            title: 'Assemble the right team',
+            color: 'red',
+            description: 'We handle all aspects of vetting and choosing the right team that you don t have the time, expertise, or desire to do.'
+        },
+        {
+            title: 'Tech architecture',
+            color: 'darkblue',
+            description: 'We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently'
+        },
+        {
+            title: 'Code reviews',
+            color: 'indigo',
+            description: 'Code reviews before release help detect issues like memory leaks, file leaks, performance signs, and general bad smells'
+        },
+        {
+            title: 'Sprint planning',
+            color: 'skyblue',
+            description: 'Sprint roadmap is a collective planning effort. Team members collaborate to clarify items and ensure shared understanding.'
+        },
+        {
+            title: 'Standups & weekly demos',
+            color: 'blue',
+            description: 'Standups, weekly demos, and weekly reviews make sure everyone is on the same page and can raise their concerns.'
+        },
+        {
+            title: 'Iterative delivery ',
+            color: 'purple',
+            description: 'We divide the implementation process into several checkpoints rather than a single deadline.'
+        }
 
-    return (
-        <div className='open'>
-            <h1 style={{ marginLeft: '2ch' }}>Open vacancies</h1>
-            <div className={`job-container ${showBoxes ? 'show' : ''}`}>
-                {Object.keys(job[0]).map((title, index) => (
-                    <div className={`job-box`} key={index}>
-                        <h2>{title}</h2>
-                        <p>* {job[0][title][0]}</p>
-                        <p>* {job[0][title][1]}</p>
-                    </div>
-                ))}
+    ];
+
+    const card = boba.map((item, index) => (
+        <div key={index} className='roach'>
+            <div
+                style={{
+                    display: 'flex',
+                    width: '35vh',
+                    height: '20vh',
+                    boxShadow: '0px 0px 3px black',
+                    paddingTop: '5%'
+
+                }}
+            >
+                <img src={item.imageUrl} alt='' />&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>
+
+                    <h3><b style={{ color: item.color }}>#{index + 1}</b> {item.title}</h3> <br />
+
+                    <p style={{
+                        color: 'gray',
+                    }}>
+
+                        {item.description}
+                    </p>
+                </p>
             </div>
         </div>
+    ));
+    return (
+        <div className='open'>
+            <div style={{ width: '5%', height: '5px', background: 'red' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> <br />
+            <h2
+                style={{
+                    fontWeight: 'lighter'
+                }}
+            >How development</h2> <br />
+            <h2 style={{ fontWeight: 'bolder' }}>  through Pryagrajxport works</h2>
+            <div className='contants'>
+                <div className='prime'
+                    style={{
+                        marginLeft: '-13%'
+                    }}>
+                    {card[0]}
+                    {card[1]}
+                    {card[2]}
+                </div>
+                <br />
+                <br />
+                <div
+                    style={{
+                        width: '135%',
+                        marginLeft: '-20%',
+                        background: 'red',
+                        height: '2px',
+                        textAlign: 'end'
+                    }}
+                >
+                    <p
+                        style={{
+                            marginTop: '-2%',
+                            marginRight: '-3%',
+                            fontSize: '30px'
+                        }}
+                    >🏆
+                    </p>
+                </div>
+                <br />
+                <br />
+                <div className='sec'
+                    style={{
+                        marginRight: '-13%'
+                    }}>
+                    {card[3]}
+                    {card[4]}
+                    {card[5]}
+                </div>
+            </div>
+
+        </div >
     );
 };
 

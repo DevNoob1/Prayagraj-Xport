@@ -1,0 +1,49 @@
+.review-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.review {
+    margin-bottom: 50px;
+    height: 20vh;
+    width: 60%;
+    font-size: 20px;
+}
+
+.user-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 130%;
+    position: absolute;
+    bottom: 200px;
+}
+
+.buttons button {
+    background: white;
+    width: 3.5%;
+    border: none;
+    border-radius: 50%;
+    border: 3px solid purple;
+    color: purple;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    /* background: #005f75; */
+}

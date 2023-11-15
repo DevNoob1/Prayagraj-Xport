@@ -1,46 +1,47 @@
 import React from 'react'
+import Navbar from './navbar'
 import './styles/head.css'
+import Co from './assets/1.png'
+import Cop from './assets/2.png'
 
 const head = () => {
     return (
-        <div className='head'>
-            <div style={{
+        <>
+            <Navbar />
+            <div className='circle'></div>
+            <div className='head'>
+                <div className='head1'>
 
-            }}>
-                <h6
-                    style={{
-                        fontSize: '2ch',
-                        marginBottom: '2ch',
-                        marginLeft: '5%'
-                    }}
-                >Ahead app</h6>
-                <h1 style={{
-                    fontSize: '5ch',
-                    width: '60%',
-                    marginLeft: '5%'
-                }}>
-                    Master you life by mastering emotions
-                </h1>
-                <div style={{
-                    display: 'flex',
-                    marginLeft: '5ch',
-                    gap: '3ch'
-                }}>
-                    <img
-                        style={{
-                            height: '5ch'
-                        }}
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/203px-Download_on_the_App_Store_Badge.svg.png?20170219160111" alt="" />
-                    ⭐⭐⭐⭐⭐ <br /> 100+ AppStore Review
+                    <div className='des1'>
+                        <p style={{ fontSize: '5vmin' }}>Great <b style={{ color: '' }}>Product</b> is </p><br />
+                        <p style={{ fontSize: '5vmin', fontWeight: "bolder" }}> built by great <b style={{ color: '' }}>teams</b></p>
+                        <br /><br /><br /><br /><br />
+                        <p style={{ fontSize: '2vmin', marginLeft: '10vmin', fontFamily: 'sans-serif' }}> You Imagine. <b style={{ color: 'purple', background: 'yellow' }}>We Create</b></p>
+                    </div>
+                    <div className='sets' style={{ display: 'flex' }}>
+
+                        <img src={Cop} alt="" style={{ height: '400px', marginTop: '-9%', marginLeft: '10%', marginRight: '-7%' }} />
+                        <img src={Co} alt="" style={{ height: '300px', marginTop: '-10%', marginLeft: '-5%' }} />
+                    </div>
                 </div>
+                <div className='head2'>
+                    <br />
+                    <br />
+                    <p>
+                        <h2
+                            style={{ fontSize: '5vmin' }}><b>Web Design</b></h2> <br /> <br />
+                        <p>Our agency web design studio creates marketing websites and landing pages that help to <br />
+                            tell brand stories, increase conversion and build trust.</p>
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <span> <button>Request a propsal</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Us > </span>
+
+                </div>
+
             </div>
-            <div>
-                <img style={{
-                    marginRight: '4ch'
-                }}
-                    src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/295de253819877.594238db795ef.gif" alt="" />
-            </div>
-        </div >
+        </>
     )
 }
 

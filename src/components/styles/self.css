@@ -1,50 +1,76 @@
-.contento {
+.self {
+    margin-top: 5%;
+    padding-top: 5%;
+    height: 100vh;
     display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7%;
     flex-direction: column;
-    gap: 3ch;
-    height: 45ch;
-    /* Adjusted height for 3 items */
-    overflow: hidden;
-    overflow-y: auto;
-    margin-top: 10ch;
-    margin-bottom: 10ch;
-    margin: 0 10%;
-    transition: filter 0.3s ease;
-
-    background: linear-gradient(from bottom, rgba(255, 255, 255, 0.283), rgb(255, 255, 255));
-    /* filter: blur(2px); */
+    background-color: rgb(245, 245, 255);
 }
 
-.contento>div {
-    filter: none;
+.contents {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.contento::-webkit-scrollbar {
-    width: 8px;
+.cardo {
+    display: flex;
+    width: 60vh;
+    background: white;
+    height: 15vh;
+    box-shadow: 0px 0px 3px black;
+    padding: 10%;
+    margin-top: 5%;
 }
 
-.contento::-webkit-scrollbar-thumb {
-    background-color: rgb(177, 177, 252);
-    border-radius: 4px;
+.cardo:nth-child(1):hover {
+    background: linear-gradient(20deg, rgb(208, 168, 237), rgb(198, 189, 245), rgb(218, 220, 243));
+    box-shadow: 0px 0px 9px black;
 }
 
-.top {
-    background-color: rgba(255, 255, 255);
-    opacity: 90%;
-    width: 78%;
-    position: absolute;
-    padding-top: 14ch;
-    filter: blur(2px);
+@keyframes rolling {
+    from {
+        transform: translateX(-50%);
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
+@keyframes hating {
+    from {
+        transform: translateX(20%);
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+
+    }
+
+    to {
+        transform: translateX(0);
+    }
 
 
-.bottom {
-    background-color: rgba(255, 255, 255);
-    opacity: 90%;
-    width: 78%;
-    position: absolute;
-    margin-top: 31ch;
-    padding-top: 14ch;
-    filter: blur(2px);
+}
+
+.self.animate .oneside {
+    animation: rolling 2s;
+}
+
+.self.animate .noside {
+    animation: hating 2s;
 }

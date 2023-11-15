@@ -1,25 +1,27 @@
 .open {
-    margin-top: -200px;
-    padding: 10px;
-    margin-bottom: 100px;
-}
-
-.job-container {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    height: 50vh;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    gap: 3ch;
-    padding: 10px;
-}
+    flex-direction: column;
+    align-items: center;
+    /* opacity: 0; */
 
-.job-box {
-    background-color: rgb(240, 233, 178);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    width: 30ch;
 
 }
 
-.job-box:hover {
-    box-shadow: 0px 10px 10px black;
+.contants {
+    width: 65%;
+    display: flex;
+
+    /* width: 100%; */
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.prime,
+.sec {
+    display: flex;
+    justify-content: space-between;
 }

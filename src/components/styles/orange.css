@@ -1,26 +1,30 @@
 .orange {
-    background-color: bisque;
     display: flex;
-    padding: 5%;
-    font-family: sans-serif;
-    margin-left: 6ch;
-    margin-top: 10ch;
+    margin-top: 8%;
+    justify-content: center;
+}
+
+.contento {
+
+    display: flex;
+    align-items: center;
     width: 80%;
-    gap: 4ch;
-    /* height: 60vh; */
-    border-radius: 4ch;
-    margin-bottom: 30ch;
+    flex-direction: column;
+    gap: 50px;
 }
 
-img {
-    height: 40ch;
+.js {
+    display: flex;
+    /* background: blue; */
+    justify-content: space-between;
+
 }
 
-.hover-scale {
-    transition: transform 0.2s ease;
+.desc {
+    width: 50%;
+    font-size: 20px;
 }
 
-.hover-scale:hover {
-    transform: scale(1.05);
-    /* Scale up the image a bit on hover */
+.pic img {
+    height: 300px;
 }

@@ -1,79 +1,43 @@
-import React from 'react'
-import './styles/work.css'
+import React from 'react';
+import './styles/work.css';
 
-const work = () => {
+const Work = () => {
     return (
         <div className='work'>
-            <div style={
-                {
-                    width: '50%',
-                }
-            }>
-                <h1>Work with us</h1>
-                <div className='left'>
-                    <p
-                        style={{
-                            paddingLeft: '6%',
-                        }}>
-                        <img
-                            style={{
-                                height: '4ch'
-                            }} src="https://img.icons8.com/?size=512&id=F03g2FKWtAd6&format=png" alt="" />
-                        <h2>About</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti delectus dolorem, obcaecati architecto praesentium ducimus quasi nihil eligendi possimus.</p>
-                    </p>
-                    <p
-                        style={{
-                            height: '18ch',
-                            paddingLeft: '6%',
-                            paddingTop: '1%',
-                            borderRadius: '3ch',
-                            background: 'antiquewhite'
-                        }}
-                    >
-                        <h2>Product</h2>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quasi reiciendis laborum est voluptates sed repellat sapiente quod explicabo dolore!
-                    </p>
+            <h2 style={{ color: 'navy' }}>Get in touch with us</h2> <br />
+            <h1>Let's Connect - Reach Out Today!</h1>
+            <div className='deta'>
+                <img src="https://i.pinimg.com/736x/a7/46/6b/a7466b4a9dc2ac9eb82950807cf83edd.jpg" style={{ height: '70vmin' }} alt="" />
+                <form>
+                    <label htmlFor="name"> Name</label> <br />
+                    <input type="text" id="name" name="name" placeholder='Enter Your Name' /><br /><br />
 
-                </div>
-            </div>
-            <div>
-                <h1
-                    style={{
-                        fontSize: '5ch',
-                        color: 'blue',
-                        marginLeft: '3ch'
-                    }}
-                >ahead</h1>
-                <div className='aheadscroll'
-                    style={{
-                        maxHeight: '45ch', // Adjust the maximum height as needed
-                        overflowY: 'auto',
-                        marginTop: '-2ch',
-                        scrollbarWidth: '0px',
-                    }}
-                >
-                    {/* Scrollable content */}
-                    {Array.from({ length: 4 }, (_, index) => (
-                        <div key={index}>
-                            <p
-                                style={{
-                                    marginRight: '5ch',
-                                    height: "15ch",
-                                    width: '25ch',
-                                    borderRadius: '3ch',
-                                    paddingTop: '5%',
-                                    paddingLeft: '5%',
-                                    background: 'white'
-                                }}
-                            >
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ab ducimus numquam eius nulla fugiat accusantium, ullam minima maiores officiis?</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div >
-    )
-}
 
-export default work
+                    <label htmlFor="email">Email</label>
+                    <br />
+                    <br />
+                    <input type="email" id="email" name="email" placeholder='Enter Your Email' /><br /><br />
+
+                    <label htmlFor="mobile">Mobile Number</label>
+                    <br />
+                    <br />
+                    <input type="tel" id="mobile" name="mobile" placeholder='Enter Your Number' /><br /><br />
+                    <label htmlFor="subject">Subject</label>
+                    <br />
+                    <br />
+                    <input type="text" id="subject" name="subject" placeholder='Enter Your Subject' /><br /><br />
+
+                    <label htmlFor="message">Your Message (optional)</label><br />
+                    <br />
+                    <br />
+                    <textarea id="message" name="message" placeholder='Enter Your Message' rows="4" cols="50"></textarea><br /><br />
+
+                    <button className='submit'>Submit</button>
+                </form>
+
+            </div>
+        </div>
+    );
+};
+
+export default Work;
